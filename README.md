@@ -1,47 +1,76 @@
-# Active Inference Evaluation
+# Active Inference
 
-Evaluation of the active inference framework for potential adoption into the Cogent Echo AI portfolio.
+Discrete-state active inference engine built from first principles. Implements the free energy principle for perception (variational free energy minimization) and action (expected free energy minimization) in partially observable Markov decision processes.
 
-## Verdict
+## What It Does
 
-**Adopt as design philosophy. Do not adopt as software dependency.**
+An agent maintains beliefs about hidden world states and selects actions that jointly:
+- **Reduce uncertainty** (epistemic value — curiosity/exploration)
+- **Achieve preferred outcomes** (pragmatic value — goal-directed behavior)
 
-Active inference (Friston, 2010) provides a coherent vocabulary for agent boundary design, uncertainty management, and self-monitoring. However, it is mathematically equivalent to reinforcement learning when implemented at scale, offers no proven performance advantages, and has no production-ready tooling.
+This naturally resolves the exploration-exploitation trade-off without separate mechanisms.
 
-## Key Findings
+## Install
 
-| Question | Answer |
-|----------|--------|
-| Is active inference different from RL? | Theoretically yes, practically no (when using neural network approximators) |
-| Is pymdp production-ready? | No. Discrete state spaces only, v0.0.7.1, combinatorial explosion at scale |
-| Are there production deployments? | No. Research and toy demos only |
-| Does the exploration bonus (EFE) work? | Derivation is contested. Standard curiosity-driven RL achieves similar results |
-| Is the LLM + active inference hybrid viable? | [Speculation] No implementations exist. Worth monitoring |
+```bash
+pip install -e ".[dev]"
+```
 
-## What's Valuable for Cogent Echo
+## Run Tests
 
-| Concept | Application |
-|---------|-------------|
-| Markov blankets | Formal agent boundary definition |
-| Precision weighting | Attention allocation / signal trust |
-| Free energy as prediction error | Agent self-monitoring health metric |
-| Generative models | Explicit, introspectable world models |
+```bash
+python -m pytest tests/ -v
+```
 
-## Structure
+41 tests covering math utilities, generative model, free energy, belief updating, and agent behavior.
 
-- `ARTIFACT-BASELINE.md` — Full evaluation artifact with decision matrix
-- `analysis/` — Content analysis reports
-- `research/` — Research notes and reuse survey
-- `decisions/` — Decision records (Agora-compatible)
-- `sources/` — Original source materials
+## Run Demos
 
-## Sources
+```bash
+python -m examples.grid_world_demo    # 1D grid navigation
+python -m examples.tmaze_demo          # T-maze benchmark (87% accuracy)
+```
 
-- [pymdp](https://github.com/infer-actively/pymdp)
-- [Millidge Retrospective (2024)](https://www.beren.io/2024-07-27-A-Retrospective-on-Active-Inference/)
-- [IWAI 2026 Workshop](https://iwaiworkshop.github.io/)
-- CompuFlair video transcript (in `sources/`)
+## Docker
 
-## Review Schedule
+```bash
+docker compose run test          # Run test suite
+docker compose run grid-demo     # Grid world demo
+docker compose run tmaze-demo    # T-maze demo
+```
 
-Next review: September 2026 — check for LLM + active inference implementations and IWAI 2026 proceedings.
+## Architecture
+
+```
+active_inference/
+  math_utils.py         Numerical primitives (softmax, KL, entropy)
+  generative_model.py   A/B/C/D matrices — the agent's world model
+  free_energy.py        VFE (perception objective) + EFE (action objective)
+  inference.py          Bayesian belief updating through Markov blanket
+  agent.py              Perception-action loop with adaptive precision
+  environments.py       GridWorld and T-maze POMDP environments
+```
+
+**Core loop:** observe → update beliefs (minimize VFE) → evaluate actions (minimize EFE) → act → repeat
+
+## Key Concepts
+
+| Concept | Implementation |
+|---------|---------------|
+| Generative model | `GenerativeModel` with A (likelihood), B (transitions), C (preferences), D (prior) |
+| Variational free energy | Accuracy - Complexity decomposition. Drives perception. |
+| Expected free energy | Pragmatic + Epistemic value. Drives action selection. |
+| Precision | Inverse temperature on action softmax. Controls explore/exploit. |
+| Markov blanket | Agent observes through A matrix, acts through B matrix. Never sees true state. |
+
+## Environments
+
+**GridWorld** — 1D grid (5 positions), noisy observations, target at position 4. Tests goal-directed navigation under perceptual uncertainty.
+
+**T-maze** — Classic active inference benchmark. Agent starts at bottom of T, receives a cue about which arm has reward, must navigate to the correct arm. Tests epistemic action (seeking information before committing).
+
+## References
+
+- Friston, K. (2010). "The free-energy principle: a unified brain theory?" Nature Reviews Neuroscience.
+- Parr, Pezzulo & Friston (2022). "Active Inference: The Free Energy Principle in Mind, Brain, and Behavior."
+- Da Costa et al. (2020). "Active inference on discrete state-spaces."

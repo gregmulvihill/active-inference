@@ -1,0 +1,1 @@
+Read HANDOFF.md and ~/.claude/projects/-home-user-github-com-gregmulvihill-active-inference/memory/MEMORY.md, then continue building the active-inference project. Follow MANDATORY FIRST ACTION in ~/.claude/CLAUDE.md on every message. Current state: 4 commits, 41 tests passing, Docker done. Remaining work: tune grid world agent, verify T-maze, update README.md and CLAUDE.md.
