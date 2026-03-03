@@ -61,8 +61,8 @@ class TestActiveInferenceAgent:
             precision_learning_rate=0.5,
         )
         initial_precision = agent.precision
-        agent.step(obs_idx=0)
-        # Precision should have changed
+        action = agent.step(obs_idx=0)
+        agent.step(obs_idx=1, prev_action=action)  # second step triggers adaptation
         assert agent.precision != initial_precision
 
     def test_report_should_contain_required_fields(self):

@@ -163,13 +163,20 @@ class ActiveInferenceAgent:
 
         Low free energy (good predictions) → increase precision (exploit more).
         High free energy (poor predictions) → decrease precision (explore more).
+        Uses exponential moving average to smooth adaptation.
         """
-        # Simple gradient: precision moves opposite to free energy
-        # Clamped to [0.1, 32.0] for numerical stability
+        # Target VFE baseline: smoothed running average
+        if not hasattr(self, "_vfe_ema"):
+            self._vfe_ema = vfe
+        self._vfe_ema = 0.8 * self._vfe_ema + 0.2 * vfe
+
+        # Precision increases when VFE is below average (good fit)
+        # Precision decreases when VFE is above average (poor fit)
+        delta = self._vfe_ema - vfe  # positive = better than average
         self.precision = np.clip(
-            self.precision - self.precision_lr * (vfe - 1.0),
-            0.1,
-            32.0,
+            self.precision + self.precision_lr * delta,
+            0.5,
+            16.0,
         )
 
     def report(self) -> dict:

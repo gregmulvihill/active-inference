@@ -1,0 +1,15 @@
+services:
+  test:
+    build:
+      context: .
+      target: test
+  grid-demo:
+    build:
+      context: .
+      target: demo
+    command: ["examples.grid_world_demo"]
+  tmaze-demo:
+    build:
+      context: .
+      target: demo
+    command: ["examples.tmaze_demo"]
