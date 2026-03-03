@@ -1,0 +1,1486 @@
+================================================================================
+YOUTUBE TRANSCRIPT
+================================================================================
+
+VIDEO INFORMATION
+--------------------------------------------------------------------------------
+Title:             This physics idea might be the next generation of machine learning
+Channel:           CompuFlair
+Channel URL:       https://www.youtube.com/channel/UC_5mZLVxZpHgGUVI-hdbn8Q
+Verified Channel:  No
+Subscribers:       12,700
+Video ID:          MqDdYybN8o0
+URL:               https://www.youtube.com/watch?v=MqDdYybN8o0
+Upload Date:       2026-02-28
+Duration:          1161.6 seconds
+Availability:      Public
+
+ENGAGEMENT STATISTICS
+--------------------------------------------------------------------------------
+Views:             11,150
+Likes:             713
+Comments:          3
+
+CONTENT METADATA
+--------------------------------------------------------------------------------
+Categories:        Science & Technology
+Tags:              0 tags
+Word Count:        2,639
+Language:          Unknown
+Age Restriction:   None
+Thumbnail:         https://i.ytimg.com/vi/MqDdYybN8o0/sddefault.jpg
+Fetched:           2026-03-03 04:53:28
+
+================================================================================
+VIDEO DESCRIPTION
+================================================================================
+
+🚀 Apply to our bootcamp:
+https://compu-flair.com/bootcamp
+
+🎲 FREE Machine Learning Course:
+https://compu-flair.com/physics-inspired-ml
+
+In this video, we explain how Active Inference uses physics principles to address the limitations of modern machine learning by treating AI as a system that actively anticipates reality rather than passively reacting to it. Current models often struggle with unpredictable environments because they operate as pattern-matching black boxes without an internal logic of cause and effect. To solve this, Active Inference gives an agent an explicit generative model, which interacts with the outside world only through a sensory and action boundary known as a Markov blanket. Rather than chasing arbitrary rewards, the system is driven by a single optimization principle: minimizing variational free energy to reduce the mismatch between its predictions and incoming sensory data. This continuous loop naturally resolves the exploration-exploitation dilemma, as the agent actively samples its environment to resolve uncertainty and manage precision. Ultimately, integrating these structured mechanics with large language models offers a practical path toward efficient, explainable AI that explicitly understands the limits of its own knowledge.
+
+📺 Chapters
+00:00 - Why AI Struggles with Messy Reality
+01:07 - Active Inference vs. Traditional Machine Learning
+02:28 - Perception as Inference Under Uncertainty
+03:34 - Optimization: From Physics to Active Inference
+04:18 - Minimizing Variational Free Energy
+06:16 - Solving the Exploration-Exploitation Dilemma
+07:42 - Markov Blankets and System Boundaries
+08:41 - Generative Models and Physics Priors
+10:32 - Managing Uncertainty Through Precision
+13:04 - Combining LLMs with Active Inference
+14:31 - Scaling Active Inference to Real Systems 
+15:24 - Physics-First Approach to Intelligence
+16:12 - Concrete Mental Image of Active Inference Framework
+17:13 - Takeaway: Intelligence means self-evidencing
+
+================================================================================
+TOP COMMENTS (3 shown)
+================================================================================
+
+Comment #1
+Author: @CompuFlair
+Likes:  0
+--------------------------------------------------------------------------------
+🎲 FREE Machine Learning Course:
+https://compu-flair.com/physics-inspired-ml
+
+🚀 Apply to our bootcamp:
+https://compu-flair.com/bootcamp
+
+Comment #2
+Author: @matthiaskonrath4172
+Likes:  0
+--------------------------------------------------------------------------------
+Cool😊
+
+Comment #3
+Author: @fitness4234
+Likes:  0
+--------------------------------------------------------------------------------
+i'm far more confident riding my motorcycle when i know (can predict)  how the road changes or turns.
+
+================================================================================
+FULL TRANSCRIPT (Plain Text)
+================================================================================
+
+Imagine you're driving in a new city at night in the rain with construction everywhere. The GPS is lagging, road markings are faded, and the headlights catch reflections that look like lane lines but aren't [gasps] somehow you still make it through. Now, compare that to many of today's AI systems. Give them a scene that's slightly different from the training data, and their confidence can stay high even as their performance quietly falls apart. A natural question is why are humans so good at coping with messy reality? And why is that still hard for machines? One clue is that humans don't mainly react to the world. We anticipate it. You're not waiting for the car to drift before correcting. You're continuously predicting what should happen next, where the lane will curve, how the car should feel under steering, what that pedestrian might do. And when the world disagrees with your predictions, you update your understanding or you act to make the prediction come true. Like slowing down to reduce uncertainty. That loop predict, compare, update, act, turns out to be central to a framework called active inference. And it's one of the most physics flavored ideas in modern AI. To see what's different about it, it helps to notice what's odd about most machine learning. A lot of powerful models today are trained like gigantic pattern fitting engines. They compress huge data sets into internal parameters and then use those parameters to guess outputs. It can work amazingly well. But the model's knowledge often isn't organized as a clear story about what causes what in the world. It's more like an extremely sophisticated autocomplete of patterns it has seen. That's why people call these systems black boxes. Not because they're magical, but because it's hard to inspect their internal logic and ask, "What do you believe is going on here? And how sure are you?" Active inference starts from a different picture. An intelligent system should behave like a scientist living inside a body. A scientist doesn't just output answers. They maintain hypotheses about hidden causes, things they can't directly see, and they keep revising those hypotheses when experiments disagree. Your brain is doing something similar all the time. You don't directly perceive the world as it is. You receive partial noisy signals. Light on the retina, vibrations in the inner ear, pressure on skin. From those, you infer what's likely out there. The key shift is this. Perception isn't passive recording. It's inference under uncertainty. Now add another twist. You don't just infer the world. You also choose actions that shape what you'll observe next. If you're unsure whether an object on the road is a plastic bag or a rock, you might slow down, change lanes, or angle your head to get a better view. In other words, action is not separate from perception. Action is a way of sampling the world to reduce uncertainty and to steer toward outcomes you prefer like staying safe. Active inference tries to unify perception, learning and action inside one loop rather than bolting them together as separate modules. So where does physics come in? In physics, a recurring theme is that complex behavior can be explained by optimization principles. Not because nature tries to optimize, but because stable patterns often look like the outcome of minimizing or maximizing something. Think of a soap film spanning a wire loop. It forms a shape that minimizes surface area. No soap molecule is solving a math problem. The shape emerges because that's the stable configuration under the laws of physics. Active inference borrows this style of thinking. It asks whether the apparently purposeful behavior of living systems can be understood as minimizing a single quantity over time. That quantity is often described using a word that sounds intimidating, free energy. In everyday physics, free energy is related to how much useful work a system can do. In active inference, the phrase is repurposed into an information focused cousin called variational free energy. The intuition is simpler than it sounds. It's a score that measures how badly your internal story of the world fits what you're sensing while also penalizing overly complicated stories. Here's the concept. If your internal model predicts your sensations well, then what you experience is less surprising. If your predictions fail, you get large prediction errors and the mismatch forces you to revise your beliefs. A system that keeps itself alive, whether a cell, an animal, or a robot, can't afford to be constantly shocked by its own sensory world. Too much surprise means you're in states you don't understand and can't control. So, active inference proposes that adaptive systems act as if they are constantly trying to keep surprise low by improving their model and choosing actions that make their sensations more predictable and safe. At this point, it's easy to misunderstand predictable as boring, like an agent that just hides in a corner because that's easy to predict. But living things don't do that. They explore, play, learn, and take risks. Active inference handles this by introducing a second idea. It distinguishes between reducing surprise right now and reducing surprise in the future. The future part is captured by something called expected free energy. Basically, if I take this action, will it lead to outcomes I like and will it teach me useful things? This is where active inference quietly solves a classic AI headache, the exploration exploitation dilemma. Many AI systems need handdesigned reward signals to learn points in a game, correct or incorrect labels, or human feedback. But in the real world, rewards are sparse, delayed, and messy. Active inference replaces the idea of chasing reward with something broader. Instead of just maximizing reward, it says, "Choose actions that move you toward what you prefer while also reducing uncertainty by learning from the world." Curiosity isn't an add-on bonus. It's built into the same objective that drives goal seeking. You can feel the logic in a simple example. Imagine a household robot that must fetch your keys. It can look where it already strongly believes the keys are. That's exploitation. or it can check a spot that would quickly reduce uncertainty, like glancing at the entryway hook, even if it seems unlikely. That's exploration. A reward only system might get stuck repeating what once worked. An active inference agent can be biased toward actions that clarify the situation because clarity itself reduces future free energy. It learns not just what to do, but what to find out next. Another physics inspired ingredient is the idea of boundaries. In biology, an organism has a boundary, skin, membrane, shell that separates inside from outside while allowing controlled exchange. Active inference formalizes this with something called a marov blanket. You can think of it as an information boundary. Your internal states, your beliefs and memories don't directly contact the outside world. They interact through a thin interface. Sensors bring information in. Actions push influence out. This matters because it forces a crucial conclusion. You never access reality directly. You only infer it through the blanket. That's not skepticism. It's engineering. Any robot, any brain, any company trying to understand its market is separated from the world by an interface of limited measurements. Once you accept that, the importance of a good internal model becomes obvious. If you can't see the true state of the world, you need a structured way to infer it. Active inference insists on using an explicit generative model. Meaning a model that can generate what you expect to sense if the world is in a certain state and you take a certain action. This isn't generative in the sense of generating images or text for fun. It's generative in the sense of I can simulate how observations arise from hidden causes. That sounds abstract, but it's deeply practical. If your model includes the idea that solid objects don't vanish, you won't keep searching for keys in places you already checked. If your model includes conservation-like constraints, objects move continuously, actions have physical costs, collisions have consequences, you won't propose impossible plans. This is one of the main ways physics can revolutionize AI here. Physics provides strong priors, meaning strong built-in expectations about how the world behaves, which dramatically reduces the amount of data needed to learn. This connects to a real limitation in today's AI. Scale has bought us impressive capabilities, but it's expensive financially, energetically, and environmentally. Human brains run on about the power of a dim light bulb. Yet they learn from limited examples and adapt continuously. Active inference aims at that kind of efficiency by leaning on structure. If your model already respects the deep regularities of the world, you don't need to rediscover them from scratch through billions of examples. Now, let's talk about uncertainty because this is another place where active inference is unusually honest. Many AI systems output a single answer with a confidence score that can be misleading. But in real life, the most important question is often not, "What's the best guess?" But how sure am I and what would change my mind? Active inference builds uncertainty into the machinery through a concept often called precision. Roughly, how much weight you should put on a signal. Here's the concept. Attention can be understood as precision management. When you're driving in fog, you treat faint visual cues as unreliable and rely more on lane position memory or the feel of the road until you see a clear sign, at which point you rapidly update. That's precision at work. The brain is constantly deciding which prediction errors to take seriously. In an active inference agent, this isn't just a psychological metaphor. It becomes a control knob that helps the system avoid overreacting to noise or stubbornly ignoring important evidence. This also opens a path to something people desperately want from AI, explanations that are more than after the fact storytelling. If an agent has an explicit model with named variables, beliefs about the road being slippery, belief that a pedestrian is near, belief that breaking distance has increased, then it can report what changed inside it when it decided to slow down. It can say, "My uncertainty about traction increased, so I shifted weight toward cautious actions." That's very different from a black box that only says, "I slowed down because that's what my neural network outputs. A common misconception is that this means active inference systems are automatically transparent and safe. Not automatically. You can still build a bad model or encode harmful preferences or deploy an agent in the wrong context. But the structure makes auditing more plausible. If the systems preferences are explicit, like avoid collisions, stay within legal speed, minimize discomfort, you can inspect and debate them. If the systems beliefs are explicit, you can test them. [clears throat] If it's uncertain, it can admit it and ask for help rather than bluffing. So, how does this relate to modern AI models like large language models? LLMs are astonishing at capturing broad patterns of human text and can act like compressed libraries of world knowledge, but by themselves, they don't have robust agency. They don't choose what data to collect next in the real world, and they don't naturally maintain a persistent testable internal world model grounded in sensors and consequences. They can predict the next word brilliantly while still failing at what experiment should I run to find out if my hypothesis is wrong. One promising vision is a hybrid use of language models and active inference. In this case, we use large language models as rich representations, ways of proposing hypotheses, summarizing context, and generating candidate plans while using active inference as the decision and learning spine that evaluates actions by expected free energy. In that setup, the LLM becomes less like an oracle and more like an imagination engine inside an agent that must remain tethered to reality through feedback. The agent would not only talk, it would also measure, act, update, and keep track of uncertainty over time. A kind of continuously updating scientific memory. This matters for more than robots. Consider complex systems like power grids, supply chains, hospitals, or communication networks. These systems are partly observable, always changing, and full of delayed effects. Traditional AI often learns from historical logs and then struggles when the world shifts. An active inference approach treats the system like a living process. It maintains a model of hidden causes, demand, failures, congestion, chooses interventions, rerouting, load balancing, and actively seeks data to reduce uncertainty, probing sensors, running diagnostic tests. It's the difference between reading a weather report and running a weather station that learns how your local microclimate behaves. Stepping back, the physics angle is not that active inference magically imports equations from Newton or Einstein into AI. The deeper point is philosophical and practical. Physics succeeds by building models that are constrained, testable, and efficient. It respects conservation laws, symmetries, and stable structure. Active inference tries to bring that first principles discipline into intelligence. Instead of training ever larger pattern matchers and hoping they generalize, it builds agents that must continually justify their beliefs against incoming evidence and must choose actions that balance goals with information gathering. If you want one final mental image, picture a thermostat, a mouse, and a scientist. A thermostat keeps temperature near a set point. Simple feedback control. A mouse not only keeps itself within safe conditions, it explores to find food, learns the layout, and avoids traps. Adaptive control. A scientist does all that while also designing experiments to reduce uncertainty and improve theories. Active inference is an attempt to write down a single principle that can scale from thermostat-like regulation to scientistlike discovery. Keep your internal model and your lived experience in tight, efficient agreement by continuously minimizing free energy. the mismatch between what you expected and what you sensed, plus the cost of making your model too complicated. The satisfying takeaway is this. Active inference reframes intelligence as something closer to self-evidencing, a system continually acting to gather the kinds of experiences that confirm and refine its understanding of the world while avoiding states that would overwhelm it with unpredictability. And physics enters not as decoration but as a guide. build agents that respect deep regularities, conserve resources, and learn by staying coupled to reality. If that vision holds up in engineering practice, it could point toward AI that is not only more capable, but also more efficient, more interpretable, and crucially better at knowing what it doesn't know. I hope you enjoyed this video. Until the next one, take care of yourself. By the way, if you've got a quantitative background in physics, [music] engineering, math, or a related field, and you're thinking about breaking into data science, but don't know your next move, this is for you. We built CompuFlare Boot Camp specifically to help you turn your technical foundation into a job ready data career. [music] Inside the program, you get a weekly personalized action plan. So you're not just following random tutorials, [music] you're building portfolio projects tailored to you. You'll also get access to my Ingram, [music] our active recall and spaced repetition system, so you actually retain machine learning concepts instead of [music] forgetting them a week later. On top of that, you'll work through 27 in to projects [music] across elementary, intermediate, and advanced levels, so you graduate with real [music] practical experience. And we don't stop there. We review your GitHub and resume weekly [music] and provide clear recommendations to help you get hired. If you're serious about landing a data role, [music] join CompuFlare Boot Camp and build a portfolio that actually stands out. [music] Apply through the link in the description below.
+
+================================================================================
+TIMESTAMPED SEGMENTS (462 segments)
+================================================================================
+
+[001] 00:00:00.000 --> 00:00:04.318  (duration: 4.319s)
+Imagine you're driving in a new city at
+
+[002] 00:00:01.919 --> 00:00:07.599  (duration: 5.680s)
+night in the rain with construction
+
+[003] 00:00:04.318 --> 00:00:09.679  (duration: 5.360s)
+everywhere. The GPS is lagging, road
+
+[004] 00:00:07.599 --> 00:00:11.759  (duration: 4.159s)
+markings are faded, and the headlights
+
+[005] 00:00:09.679 --> 00:00:14.320  (duration: 4.641s)
+catch reflections that look like lane
+
+[006] 00:00:11.759 --> 00:00:17.679  (duration: 5.921s)
+lines but aren't [gasps]
+
+[007] 00:00:14.320 --> 00:00:19.679  (duration: 5.360s)
+somehow you still make it through. Now,
+
+[008] 00:00:17.679 --> 00:00:21.759  (duration: 4.080s)
+compare that to many of today's AI
+
+[009] 00:00:19.679 --> 00:00:23.118  (duration: 3.439s)
+systems. Give them a scene that's
+
+[010] 00:00:21.760 --> 00:00:25.679  (duration: 3.920s)
+slightly different from the training
+
+[011] 00:00:23.118 --> 00:00:27.759  (duration: 4.641s)
+data, and their confidence can stay high
+
+[012] 00:00:25.679 --> 00:00:31.278  (duration: 5.599s)
+even as their performance quietly falls
+
+[013] 00:00:27.760 --> 00:00:33.120  (duration: 5.360s)
+apart. A natural question is why are
+
+[014] 00:00:31.278 --> 00:00:35.840  (duration: 4.561s)
+humans so good at coping with messy
+
+[015] 00:00:33.119 --> 00:00:37.599  (duration: 4.480s)
+reality? And why is that still hard for
+
+[016] 00:00:35.840 --> 00:00:39.840  (duration: 4.000s)
+machines?
+
+[017] 00:00:37.600 --> 00:00:43.280  (duration: 5.680s)
+One clue is that humans don't mainly
+
+[018] 00:00:39.840 --> 00:00:45.120  (duration: 5.280s)
+react to the world. We anticipate it.
+
+[019] 00:00:43.280 --> 00:00:47.520  (duration: 4.240s)
+You're not waiting for the car to drift
+
+[020] 00:00:45.119 --> 00:00:49.679  (duration: 4.560s)
+before correcting. You're continuously
+
+[021] 00:00:47.520 --> 00:00:52.079  (duration: 4.559s)
+predicting what should happen next,
+
+[022] 00:00:49.679 --> 00:00:54.399  (duration: 4.719s)
+where the lane will curve, how the car
+
+[023] 00:00:52.079 --> 00:00:56.640  (duration: 4.561s)
+should feel under steering, what that
+
+[024] 00:00:54.399 --> 00:00:58.239  (duration: 3.840s)
+pedestrian might do.
+
+[025] 00:00:56.640 --> 00:00:59.920  (duration: 3.280s)
+And when the world disagrees with your
+
+[026] 00:00:58.238 --> 00:01:02.878  (duration: 4.640s)
+predictions, you update your
+
+[027] 00:00:59.920 --> 00:01:05.439  (duration: 5.519s)
+understanding or you act to make the
+
+[028] 00:01:02.878 --> 00:01:07.759  (duration: 4.881s)
+prediction come true. Like slowing down
+
+[029] 00:01:05.438 --> 00:01:12.000  (duration: 6.561s)
+to reduce uncertainty.
+
+[030] 00:01:07.760 --> 00:01:13.840  (duration: 6.080s)
+That loop predict, compare, update, act,
+
+[031] 00:01:12.000 --> 00:01:16.000  (duration: 4.000s)
+turns out to be central to a framework
+
+[032] 00:01:13.840 --> 00:01:17.840  (duration: 4.000s)
+called active inference. And it's one of
+
+[033] 00:01:16.000 --> 00:01:20.400  (duration: 4.400s)
+the most physics flavored ideas in
+
+[034] 00:01:17.840 --> 00:01:23.118  (duration: 5.279s)
+modern AI. To see what's different about
+
+[035] 00:01:20.400 --> 00:01:25.439  (duration: 5.039s)
+it, it helps to notice what's odd about
+
+[036] 00:01:23.118 --> 00:01:27.519  (duration: 4.401s)
+most machine learning. A lot of powerful
+
+[037] 00:01:25.438 --> 00:01:30.079  (duration: 4.641s)
+models today are trained like gigantic
+
+[038] 00:01:27.519 --> 00:01:32.798  (duration: 5.279s)
+pattern fitting engines. They compress
+
+[039] 00:01:30.079 --> 00:01:35.039  (duration: 4.960s)
+huge data sets into internal parameters
+
+[040] 00:01:32.799 --> 00:01:38.799  (duration: 6.000s)
+and then use those parameters to guess
+
+[041] 00:01:35.040 --> 00:01:41.118  (duration: 6.079s)
+outputs. It can work amazingly well. But
+
+[042] 00:01:38.799 --> 00:01:43.360  (duration: 4.561s)
+the model's knowledge often isn't
+
+[043] 00:01:41.118 --> 00:01:46.478  (duration: 5.360s)
+organized as a clear story about what
+
+[044] 00:01:43.359 --> 00:01:49.039  (duration: 5.680s)
+causes what in the world. It's more like
+
+[045] 00:01:46.478 --> 00:01:51.679  (duration: 5.201s)
+an extremely sophisticated autocomplete
+
+[046] 00:01:49.040 --> 00:01:54.719  (duration: 5.680s)
+of patterns it has seen. That's why
+
+[047] 00:01:51.680 --> 00:01:56.960  (duration: 5.280s)
+people call these systems black boxes.
+
+[048] 00:01:54.719 --> 00:01:58.798  (duration: 4.079s)
+Not because they're magical, but because
+
+[049] 00:01:56.959 --> 00:02:01.679  (duration: 4.720s)
+it's hard to inspect their internal
+
+[050] 00:01:58.799 --> 00:02:05.200  (duration: 6.401s)
+logic and ask, "What do you believe is
+
+[051] 00:02:01.680 --> 00:02:06.960  (duration: 5.280s)
+going on here? And how sure are you?"
+
+[052] 00:02:05.200 --> 00:02:09.118  (duration: 3.919s)
+Active inference starts from a different
+
+[053] 00:02:06.959 --> 00:02:11.680  (duration: 4.720s)
+picture. An intelligent system should
+
+[054] 00:02:09.118 --> 00:02:14.639  (duration: 5.521s)
+behave like a scientist living inside a
+
+[055] 00:02:11.680 --> 00:02:17.360  (duration: 5.680s)
+body. A scientist doesn't just output
+
+[056] 00:02:14.639 --> 00:02:19.519  (duration: 4.880s)
+answers. They maintain hypotheses about
+
+[057] 00:02:17.360 --> 00:02:22.080  (duration: 4.720s)
+hidden causes, things they can't
+
+[058] 00:02:19.520 --> 00:02:24.080  (duration: 4.560s)
+directly see, and they keep revising
+
+[059] 00:02:22.080 --> 00:02:25.599  (duration: 3.519s)
+those hypotheses when experiments
+
+[060] 00:02:24.080 --> 00:02:27.599  (duration: 3.519s)
+disagree.
+
+[061] 00:02:25.598 --> 00:02:30.079  (duration: 4.481s)
+Your brain is doing something similar
+
+[062] 00:02:27.598 --> 00:02:33.359  (duration: 5.761s)
+all the time. You don't directly
+
+[063] 00:02:30.080 --> 00:02:36.000  (duration: 5.920s)
+perceive the world as it is. You receive
+
+[064] 00:02:33.360 --> 00:02:38.319  (duration: 4.959s)
+partial noisy signals. Light on the
+
+[065] 00:02:36.000 --> 00:02:42.000  (duration: 6.000s)
+retina, vibrations in the inner ear,
+
+[066] 00:02:38.318 --> 00:02:44.958  (duration: 6.640s)
+pressure on skin. From those, you infer
+
+[067] 00:02:42.000 --> 00:02:47.680  (duration: 5.680s)
+what's likely out there. The key shift
+
+[068] 00:02:44.959 --> 00:02:50.080  (duration: 5.121s)
+is this. Perception isn't passive
+
+[069] 00:02:47.680 --> 00:02:51.599  (duration: 3.919s)
+recording. It's inference under
+
+[070] 00:02:50.080 --> 00:02:54.239  (duration: 4.159s)
+uncertainty.
+
+[071] 00:02:51.598 --> 00:02:57.119  (duration: 5.521s)
+Now add another twist. You don't just
+
+[072] 00:02:54.239 --> 00:03:00.080  (duration: 5.841s)
+infer the world. You also choose actions
+
+[073] 00:02:57.120 --> 00:03:01.759  (duration: 4.640s)
+that shape what you'll observe next. If
+
+[074] 00:03:00.080 --> 00:03:04.879  (duration: 4.799s)
+you're unsure whether an object on the
+
+[075] 00:03:01.759 --> 00:03:08.479  (duration: 6.720s)
+road is a plastic bag or a rock, you
+
+[076] 00:03:04.878 --> 00:03:11.280  (duration: 6.401s)
+might slow down, change lanes, or angle
+
+[077] 00:03:08.479 --> 00:03:13.598  (duration: 5.119s)
+your head to get a better view. In other
+
+[078] 00:03:11.280 --> 00:03:16.640  (duration: 5.360s)
+words, action is not separate from
+
+[079] 00:03:13.598 --> 00:03:20.079  (duration: 6.481s)
+perception. Action is a way of sampling
+
+[080] 00:03:16.639 --> 00:03:22.639  (duration: 6.000s)
+the world to reduce uncertainty and to
+
+[081] 00:03:20.080 --> 00:03:25.519  (duration: 5.439s)
+steer toward outcomes you prefer like
+
+[082] 00:03:22.639 --> 00:03:28.399  (duration: 5.760s)
+staying safe. Active inference tries to
+
+[083] 00:03:25.519 --> 00:03:32.080  (duration: 6.561s)
+unify perception, learning and action
+
+[084] 00:03:28.400 --> 00:03:35.039  (duration: 6.640s)
+inside one loop rather than bolting them
+
+[085] 00:03:32.080 --> 00:03:38.080  (duration: 6.000s)
+together as separate modules. So where
+
+[086] 00:03:35.039 --> 00:03:40.239  (duration: 5.199s)
+does physics come in? In physics, a
+
+[087] 00:03:38.080 --> 00:03:42.000  (duration: 3.920s)
+recurring theme is that complex behavior
+
+[088] 00:03:40.239 --> 00:03:45.200  (duration: 4.961s)
+can be explained by optimization
+
+[089] 00:03:42.000 --> 00:03:47.759  (duration: 5.760s)
+principles. Not because nature tries to
+
+[090] 00:03:45.199 --> 00:03:49.280  (duration: 4.080s)
+optimize, but because stable patterns
+
+[091] 00:03:47.759 --> 00:03:52.158  (duration: 4.399s)
+often look like the outcome of
+
+[092] 00:03:49.280 --> 00:03:54.239  (duration: 4.959s)
+minimizing or maximizing something.
+
+[093] 00:03:52.158 --> 00:03:57.120  (duration: 4.961s)
+Think of a soap film spanning a wire
+
+[094] 00:03:54.239 --> 00:04:00.080  (duration: 5.841s)
+loop. It forms a shape that minimizes
+
+[095] 00:03:57.120 --> 00:04:02.239  (duration: 5.119s)
+surface area. No soap molecule is
+
+[096] 00:04:00.080 --> 00:04:04.080  (duration: 4.000s)
+solving a math problem. The shape
+
+[097] 00:04:02.239 --> 00:04:07.120  (duration: 4.881s)
+emerges because that's the stable
+
+[098] 00:04:04.080 --> 00:04:09.200  (duration: 5.120s)
+configuration under the laws of physics.
+
+[099] 00:04:07.120 --> 00:04:12.080  (duration: 4.960s)
+Active inference borrows this style of
+
+[100] 00:04:09.199 --> 00:04:14.079  (duration: 4.880s)
+thinking. It asks whether the apparently
+
+[101] 00:04:12.080 --> 00:04:16.560  (duration: 4.480s)
+purposeful behavior of living systems
+
+[102] 00:04:14.080 --> 00:04:18.959  (duration: 4.879s)
+can be understood as minimizing a single
+
+[103] 00:04:16.560 --> 00:04:21.280  (duration: 4.720s)
+quantity over time.
+
+[104] 00:04:18.959 --> 00:04:23.519  (duration: 4.561s)
+That quantity is often described using a
+
+[105] 00:04:21.279 --> 00:04:27.279  (duration: 6.000s)
+word that sounds intimidating,
+
+[106] 00:04:23.519 --> 00:04:29.599  (duration: 6.080s)
+free energy. In everyday physics, free
+
+[107] 00:04:27.279 --> 00:04:32.638  (duration: 5.359s)
+energy is related to how much useful
+
+[108] 00:04:29.600 --> 00:04:35.199  (duration: 5.599s)
+work a system can do. In active
+
+[109] 00:04:32.639 --> 00:04:37.759  (duration: 5.120s)
+inference, the phrase is repurposed into
+
+[110] 00:04:35.199 --> 00:04:40.800  (duration: 5.601s)
+an information focused cousin called
+
+[111] 00:04:37.759 --> 00:04:43.520  (duration: 5.761s)
+variational free energy. The intuition
+
+[112] 00:04:40.800 --> 00:04:45.840  (duration: 5.040s)
+is simpler than it sounds. It's a score
+
+[113] 00:04:43.519 --> 00:04:47.599  (duration: 4.080s)
+that measures how badly your internal
+
+[114] 00:04:45.839 --> 00:04:50.719  (duration: 4.880s)
+story of the world fits what you're
+
+[115] 00:04:47.600 --> 00:04:52.879  (duration: 5.280s)
+sensing while also penalizing overly
+
+[116] 00:04:50.720 --> 00:04:55.680  (duration: 4.960s)
+complicated stories.
+
+[117] 00:04:52.879 --> 00:04:58.000  (duration: 5.120s)
+Here's the concept. If your internal
+
+[118] 00:04:55.680 --> 00:04:59.918  (duration: 4.239s)
+model predicts your sensations well,
+
+[119] 00:04:58.000 --> 00:05:01.680  (duration: 3.680s)
+then what you experience is less
+
+[120] 00:04:59.918 --> 00:05:04.240  (duration: 4.321s)
+surprising.
+
+[121] 00:05:01.680 --> 00:05:06.560  (duration: 4.880s)
+If your predictions fail, you get large
+
+[122] 00:05:04.240 --> 00:05:09.120  (duration: 4.880s)
+prediction errors and the mismatch
+
+[123] 00:05:06.560 --> 00:05:11.360  (duration: 4.800s)
+forces you to revise your beliefs. A
+
+[124] 00:05:09.120 --> 00:05:14.639  (duration: 5.519s)
+system that keeps itself alive, whether
+
+[125] 00:05:11.360 --> 00:05:16.879  (duration: 5.520s)
+a cell, an animal, or a robot, can't
+
+[126] 00:05:14.639 --> 00:05:19.680  (duration: 5.041s)
+afford to be constantly shocked by its
+
+[127] 00:05:16.879 --> 00:05:20.959  (duration: 4.080s)
+own sensory world. Too much surprise
+
+[128] 00:05:19.680 --> 00:05:24.639  (duration: 4.959s)
+means you're in states you don't
+
+[129] 00:05:20.959 --> 00:05:26.959  (duration: 6.000s)
+understand and can't control. So, active
+
+[130] 00:05:24.639 --> 00:05:28.960  (duration: 4.321s)
+inference proposes that adaptive systems
+
+[131] 00:05:26.959 --> 00:05:31.758  (duration: 4.799s)
+act as if they are constantly trying to
+
+[132] 00:05:28.959 --> 00:05:34.239  (duration: 5.280s)
+keep surprise low by improving their
+
+[133] 00:05:31.759 --> 00:05:36.479  (duration: 4.720s)
+model and choosing actions that make
+
+[134] 00:05:34.240 --> 00:05:38.000  (duration: 3.760s)
+their sensations more predictable and
+
+[135] 00:05:36.478 --> 00:05:39.439  (duration: 2.961s)
+safe.
+
+[136] 00:05:38.000 --> 00:05:42.639  (duration: 4.639s)
+At this point, it's easy to
+
+[137] 00:05:39.439 --> 00:05:44.240  (duration: 4.800s)
+misunderstand predictable as boring,
+
+[138] 00:05:42.639 --> 00:05:47.038  (duration: 4.400s)
+like an agent that just hides in a
+
+[139] 00:05:44.240 --> 00:05:49.680  (duration: 5.440s)
+corner because that's easy to predict.
+
+[140] 00:05:47.038 --> 00:05:53.360  (duration: 6.321s)
+But living things don't do that. They
+
+[141] 00:05:49.680 --> 00:05:54.879  (duration: 5.200s)
+explore, play, learn, and take risks.
+
+[142] 00:05:53.360 --> 00:05:57.280  (duration: 3.920s)
+Active inference handles this by
+
+[143] 00:05:54.879 --> 00:05:59.439  (duration: 4.560s)
+introducing a second idea. It
+
+[144] 00:05:57.279 --> 00:06:02.239  (duration: 4.960s)
+distinguishes between reducing surprise
+
+[145] 00:05:59.439 --> 00:06:05.360  (duration: 5.920s)
+right now and reducing surprise in the
+
+[146] 00:06:02.240 --> 00:06:08.319  (duration: 6.079s)
+future. The future part is captured by
+
+[147] 00:06:05.360 --> 00:06:10.960  (duration: 5.600s)
+something called expected free energy.
+
+[148] 00:06:08.319 --> 00:06:13.840  (duration: 5.521s)
+Basically, if I take this action, will
+
+[149] 00:06:10.959 --> 00:06:16.399  (duration: 5.440s)
+it lead to outcomes I like and will it
+
+[150] 00:06:13.839 --> 00:06:18.638  (duration: 4.799s)
+teach me useful things?
+
+[151] 00:06:16.399 --> 00:06:21.359  (duration: 4.960s)
+This is where active inference quietly
+
+[152] 00:06:18.639 --> 00:06:24.800  (duration: 6.161s)
+solves a classic AI headache, the
+
+[153] 00:06:21.360 --> 00:06:27.199  (duration: 5.839s)
+exploration exploitation dilemma. Many
+
+[154] 00:06:24.800 --> 00:06:30.000  (duration: 5.200s)
+AI systems need handdesigned reward
+
+[155] 00:06:27.199 --> 00:06:32.960  (duration: 5.761s)
+signals to learn points in a game,
+
+[156] 00:06:30.000 --> 00:06:34.560  (duration: 4.560s)
+correct or incorrect labels, or human
+
+[157] 00:06:32.959 --> 00:06:36.799  (duration: 3.840s)
+feedback.
+
+[158] 00:06:34.560 --> 00:06:40.000  (duration: 5.440s)
+But in the real world, rewards are
+
+[159] 00:06:36.800 --> 00:06:42.319  (duration: 5.519s)
+sparse, delayed, and messy. Active
+
+[160] 00:06:40.000 --> 00:06:45.199  (duration: 5.199s)
+inference replaces the idea of chasing
+
+[161] 00:06:42.319 --> 00:06:47.600  (duration: 5.281s)
+reward with something broader. Instead
+
+[162] 00:06:45.199 --> 00:06:49.680  (duration: 4.481s)
+of just maximizing reward, it says,
+
+[163] 00:06:47.600 --> 00:06:51.919  (duration: 4.319s)
+"Choose actions that move you toward
+
+[164] 00:06:49.680 --> 00:06:55.038  (duration: 5.359s)
+what you prefer while also reducing
+
+[165] 00:06:51.918 --> 00:06:57.680  (duration: 5.761s)
+uncertainty by learning from the world."
+
+[166] 00:06:55.038 --> 00:06:59.360  (duration: 4.321s)
+Curiosity isn't an add-on bonus. It's
+
+[167] 00:06:57.680 --> 00:07:01.598  (duration: 3.919s)
+built into the same objective that
+
+[168] 00:06:59.360 --> 00:07:03.360  (duration: 4.000s)
+drives goal seeking.
+
+[169] 00:07:01.598 --> 00:07:04.959  (duration: 3.361s)
+You can feel the logic in a simple
+
+[170] 00:07:03.360 --> 00:07:06.639  (duration: 3.279s)
+example.
+
+[171] 00:07:04.959 --> 00:07:09.439  (duration: 4.480s)
+Imagine a household robot that must
+
+[172] 00:07:06.639 --> 00:07:12.079  (duration: 5.441s)
+fetch your keys. It can look where it
+
+[173] 00:07:09.439 --> 00:07:14.079  (duration: 4.640s)
+already strongly believes the keys are.
+
+[174] 00:07:12.079 --> 00:07:15.680  (duration: 3.600s)
+That's exploitation.
+
+[175] 00:07:14.079 --> 00:07:18.079  (duration: 4.000s)
+or it can check a spot that would
+
+[176] 00:07:15.680 --> 00:07:20.160  (duration: 4.480s)
+quickly reduce uncertainty, like
+
+[177] 00:07:18.079 --> 00:07:24.079  (duration: 6.000s)
+glancing at the entryway hook, even if
+
+[178] 00:07:20.160 --> 00:07:26.319  (duration: 6.159s)
+it seems unlikely. That's exploration.
+
+[179] 00:07:24.079 --> 00:07:29.038  (duration: 4.959s)
+A reward only system might get stuck
+
+[180] 00:07:26.319 --> 00:07:31.039  (duration: 4.720s)
+repeating what once worked. An active
+
+[181] 00:07:29.038 --> 00:07:33.598  (duration: 4.560s)
+inference agent can be biased toward
+
+[182] 00:07:31.038 --> 00:07:36.318  (duration: 5.280s)
+actions that clarify the situation
+
+[183] 00:07:33.598 --> 00:07:39.038  (duration: 5.440s)
+because clarity itself reduces future
+
+[184] 00:07:36.319 --> 00:07:42.720  (duration: 6.401s)
+free energy. It learns not just what to
+
+[185] 00:07:39.038 --> 00:07:44.719  (duration: 5.681s)
+do, but what to find out next. Another
+
+[186] 00:07:42.720 --> 00:07:47.840  (duration: 5.120s)
+physics inspired ingredient is the idea
+
+[187] 00:07:44.720 --> 00:07:51.120  (duration: 6.400s)
+of boundaries. In biology, an organism
+
+[188] 00:07:47.839 --> 00:07:53.439  (duration: 5.600s)
+has a boundary, skin, membrane, shell
+
+[189] 00:07:51.120 --> 00:07:56.160  (duration: 5.040s)
+that separates inside from outside while
+
+[190] 00:07:53.439 --> 00:07:58.399  (duration: 4.960s)
+allowing controlled exchange.
+
+[191] 00:07:56.160 --> 00:08:01.360  (duration: 5.200s)
+Active inference formalizes this with
+
+[192] 00:07:58.399 --> 00:08:02.878  (duration: 4.479s)
+something called a marov blanket. You
+
+[193] 00:08:01.360 --> 00:08:05.840  (duration: 4.480s)
+can think of it as an information
+
+[194] 00:08:02.879 --> 00:08:08.240  (duration: 5.361s)
+boundary. Your internal states, your
+
+[195] 00:08:05.839 --> 00:08:11.038  (duration: 5.199s)
+beliefs and memories don't directly
+
+[196] 00:08:08.240 --> 00:08:13.918  (duration: 5.679s)
+contact the outside world. They interact
+
+[197] 00:08:11.038 --> 00:08:16.878  (duration: 5.840s)
+through a thin interface. Sensors bring
+
+[198] 00:08:13.918 --> 00:08:18.399  (duration: 4.481s)
+information in. Actions push influence
+
+[199] 00:08:16.879 --> 00:08:20.720  (duration: 3.841s)
+out.
+
+[200] 00:08:18.399 --> 00:08:23.758  (duration: 5.359s)
+This matters because it forces a crucial
+
+[201] 00:08:20.720 --> 00:08:26.560  (duration: 5.840s)
+conclusion. You never access reality
+
+[202] 00:08:23.759 --> 00:08:28.160  (duration: 4.401s)
+directly. You only infer it through the
+
+[203] 00:08:26.560 --> 00:08:31.199  (duration: 4.639s)
+blanket.
+
+[204] 00:08:28.160 --> 00:08:34.959  (duration: 6.799s)
+That's not skepticism. It's engineering.
+
+[205] 00:08:31.199 --> 00:08:37.360  (duration: 6.161s)
+Any robot, any brain, any company trying
+
+[206] 00:08:34.958 --> 00:08:39.278  (duration: 4.320s)
+to understand its market is separated
+
+[207] 00:08:37.360 --> 00:08:41.680  (duration: 4.320s)
+from the world by an interface of
+
+[208] 00:08:39.278 --> 00:08:44.080  (duration: 4.801s)
+limited measurements.
+
+[209] 00:08:41.679 --> 00:08:47.199  (duration: 5.520s)
+Once you accept that, the importance of
+
+[210] 00:08:44.080 --> 00:08:49.519  (duration: 5.439s)
+a good internal model becomes obvious.
+
+[211] 00:08:47.200 --> 00:08:52.000  (duration: 4.800s)
+If you can't see the true state of the
+
+[212] 00:08:49.519 --> 00:08:55.278  (duration: 5.760s)
+world, you need a structured way to
+
+[213] 00:08:52.000 --> 00:08:58.399  (duration: 6.399s)
+infer it. Active inference insists on
+
+[214] 00:08:55.278 --> 00:09:00.240  (duration: 4.961s)
+using an explicit generative model.
+
+[215] 00:08:58.399 --> 00:09:02.799  (duration: 4.401s)
+Meaning a model that can generate what
+
+[216] 00:09:00.240 --> 00:09:05.600  (duration: 5.360s)
+you expect to sense if the world is in a
+
+[217] 00:09:02.799 --> 00:09:08.479  (duration: 5.680s)
+certain state and you take a certain
+
+[218] 00:09:05.600 --> 00:09:10.639  (duration: 5.040s)
+action. This isn't generative in the
+
+[219] 00:09:08.480 --> 00:09:14.240  (duration: 5.760s)
+sense of generating images or text for
+
+[220] 00:09:10.639 --> 00:09:16.879  (duration: 6.240s)
+fun. It's generative in the sense of I
+
+[221] 00:09:14.240 --> 00:09:18.879  (duration: 4.640s)
+can simulate how observations arise from
+
+[222] 00:09:16.879 --> 00:09:21.679  (duration: 4.800s)
+hidden causes.
+
+[223] 00:09:18.879 --> 00:09:23.200  (duration: 4.320s)
+That sounds abstract, but it's deeply
+
+[224] 00:09:21.679 --> 00:09:25.120  (duration: 3.440s)
+practical.
+
+[225] 00:09:23.200 --> 00:09:27.360  (duration: 4.160s)
+If your model includes the idea that
+
+[226] 00:09:25.120 --> 00:09:29.200  (duration: 4.080s)
+solid objects don't vanish, you won't
+
+[227] 00:09:27.360 --> 00:09:31.839  (duration: 4.479s)
+keep searching for keys in places you
+
+[228] 00:09:29.200 --> 00:09:34.480  (duration: 5.280s)
+already checked. If your model includes
+
+[229] 00:09:31.839 --> 00:09:36.880  (duration: 5.041s)
+conservation-like constraints, objects
+
+[230] 00:09:34.480 --> 00:09:40.480  (duration: 6.000s)
+move continuously, actions have physical
+
+[231] 00:09:36.879 --> 00:09:43.600  (duration: 6.720s)
+costs, collisions have consequences, you
+
+[232] 00:09:40.480 --> 00:09:45.519  (duration: 5.039s)
+won't propose impossible plans. This is
+
+[233] 00:09:43.600 --> 00:09:48.879  (duration: 5.280s)
+one of the main ways physics can
+
+[234] 00:09:45.519 --> 00:09:51.919  (duration: 6.401s)
+revolutionize AI here. Physics provides
+
+[235] 00:09:48.879 --> 00:09:53.759  (duration: 4.880s)
+strong priors, meaning strong built-in
+
+[236] 00:09:51.919 --> 00:09:56.559  (duration: 4.640s)
+expectations about how the world
+
+[237] 00:09:53.759 --> 00:09:59.360  (duration: 5.600s)
+behaves, which dramatically reduces the
+
+[238] 00:09:56.559 --> 00:10:01.359  (duration: 4.800s)
+amount of data needed to learn.
+
+[239] 00:09:59.360 --> 00:10:03.919  (duration: 4.560s)
+This connects to a real limitation in
+
+[240] 00:10:01.360 --> 00:10:06.000  (duration: 4.640s)
+today's AI. Scale has bought us
+
+[241] 00:10:03.919 --> 00:10:08.719  (duration: 4.800s)
+impressive capabilities, but it's
+
+[242] 00:10:06.000 --> 00:10:11.600  (duration: 5.600s)
+expensive financially, energetically,
+
+[243] 00:10:08.720 --> 00:10:14.000  (duration: 5.280s)
+and environmentally. Human brains run on
+
+[244] 00:10:11.600 --> 00:10:15.920  (duration: 4.320s)
+about the power of a dim light bulb. Yet
+
+[245] 00:10:14.000 --> 00:10:18.078  (duration: 4.079s)
+they learn from limited examples and
+
+[246] 00:10:15.919 --> 00:10:20.078  (duration: 4.159s)
+adapt continuously.
+
+[247] 00:10:18.078 --> 00:10:23.039  (duration: 4.961s)
+Active inference aims at that kind of
+
+[248] 00:10:20.078 --> 00:10:25.439  (duration: 5.361s)
+efficiency by leaning on structure.
+
+[249] 00:10:23.039 --> 00:10:27.679  (duration: 4.640s)
+If your model already respects the deep
+
+[250] 00:10:25.440 --> 00:10:29.440  (duration: 4.000s)
+regularities of the world, you don't
+
+[251] 00:10:27.679 --> 00:10:32.000  (duration: 4.320s)
+need to rediscover them from scratch
+
+[252] 00:10:29.440 --> 00:10:34.399  (duration: 4.959s)
+through billions of examples.
+
+[253] 00:10:32.000 --> 00:10:36.000  (duration: 4.000s)
+Now, let's talk about uncertainty
+
+[254] 00:10:34.399 --> 00:10:39.039  (duration: 4.641s)
+because this is another place where
+
+[255] 00:10:36.000 --> 00:10:41.440  (duration: 5.440s)
+active inference is unusually honest.
+
+[256] 00:10:39.039 --> 00:10:43.120  (duration: 4.080s)
+Many AI systems output a single answer
+
+[257] 00:10:41.440 --> 00:10:46.240  (duration: 4.800s)
+with a confidence score that can be
+
+[258] 00:10:43.120 --> 00:10:48.639  (duration: 5.520s)
+misleading. But in real life, the most
+
+[259] 00:10:46.240 --> 00:10:52.240  (duration: 6.000s)
+important question is often not, "What's
+
+[260] 00:10:48.639 --> 00:10:55.039  (duration: 6.400s)
+the best guess?" But how sure am I and
+
+[261] 00:10:52.240 --> 00:10:56.959  (duration: 4.719s)
+what would change my mind? Active
+
+[262] 00:10:55.039 --> 00:10:59.199  (duration: 4.160s)
+inference builds uncertainty into the
+
+[263] 00:10:56.958 --> 00:11:02.078  (duration: 5.120s)
+machinery through a concept often called
+
+[264] 00:10:59.200 --> 00:11:04.720  (duration: 5.520s)
+precision. Roughly, how much weight you
+
+[265] 00:11:02.078 --> 00:11:08.000  (duration: 5.921s)
+should put on a signal. Here's the
+
+[266] 00:11:04.720 --> 00:11:10.320  (duration: 5.600s)
+concept. Attention can be understood as
+
+[267] 00:11:08.000 --> 00:11:12.559  (duration: 4.560s)
+precision management.
+
+[268] 00:11:10.320 --> 00:11:15.440  (duration: 5.120s)
+When you're driving in fog, you treat
+
+[269] 00:11:12.559 --> 00:11:17.759  (duration: 5.200s)
+faint visual cues as unreliable and rely
+
+[270] 00:11:15.440 --> 00:11:21.200  (duration: 5.760s)
+more on lane position memory or the feel
+
+[271] 00:11:17.759 --> 00:11:23.679  (duration: 5.920s)
+of the road until you see a clear sign,
+
+[272] 00:11:21.200 --> 00:11:26.640  (duration: 5.440s)
+at which point you rapidly update.
+
+[273] 00:11:23.679 --> 00:11:28.559  (duration: 4.880s)
+That's precision at work. The brain is
+
+[274] 00:11:26.639 --> 00:11:30.879  (duration: 4.240s)
+constantly deciding which prediction
+
+[275] 00:11:28.559 --> 00:11:33.119  (duration: 4.560s)
+errors to take seriously.
+
+[276] 00:11:30.879 --> 00:11:35.120  (duration: 4.240s)
+In an active inference agent, this isn't
+
+[277] 00:11:33.120 --> 00:11:37.120  (duration: 4.000s)
+just a psychological metaphor. It
+
+[278] 00:11:35.120 --> 00:11:40.240  (duration: 5.120s)
+becomes a control knob that helps the
+
+[279] 00:11:37.120 --> 00:11:43.600  (duration: 6.480s)
+system avoid overreacting to noise or
+
+[280] 00:11:40.240 --> 00:11:45.519  (duration: 5.279s)
+stubbornly ignoring important evidence.
+
+[281] 00:11:43.600 --> 00:11:48.399  (duration: 4.799s)
+This also opens a path to something
+
+[282] 00:11:45.519 --> 00:11:50.480  (duration: 4.961s)
+people desperately want from AI,
+
+[283] 00:11:48.399 --> 00:11:52.879  (duration: 4.481s)
+explanations that are more than after
+
+[284] 00:11:50.480 --> 00:11:55.200  (duration: 4.720s)
+the fact storytelling.
+
+[285] 00:11:52.879 --> 00:11:57.600  (duration: 4.720s)
+If an agent has an explicit model with
+
+[286] 00:11:55.200 --> 00:12:00.079  (duration: 4.879s)
+named variables, beliefs about the road
+
+[287] 00:11:57.600 --> 00:12:02.399  (duration: 4.799s)
+being slippery, belief that a pedestrian
+
+[288] 00:12:00.078 --> 00:12:04.958  (duration: 4.880s)
+is near, belief that breaking distance
+
+[289] 00:12:02.399 --> 00:12:06.879  (duration: 4.481s)
+has increased, then it can report what
+
+[290] 00:12:04.958 --> 00:12:10.479  (duration: 5.521s)
+changed inside it when it decided to
+
+[291] 00:12:06.879 --> 00:12:12.799  (duration: 5.920s)
+slow down. It can say, "My uncertainty
+
+[292] 00:12:10.480 --> 00:12:15.680  (duration: 5.200s)
+about traction increased, so I shifted
+
+[293] 00:12:12.799 --> 00:12:17.679  (duration: 4.880s)
+weight toward cautious actions."
+
+[294] 00:12:15.679 --> 00:12:20.239  (duration: 4.560s)
+That's very different from a black box
+
+[295] 00:12:17.679 --> 00:12:23.599  (duration: 5.920s)
+that only says, "I slowed down because
+
+[296] 00:12:20.240 --> 00:12:25.600  (duration: 5.360s)
+that's what my neural network outputs.
+
+[297] 00:12:23.600 --> 00:12:27.519  (duration: 3.919s)
+A common misconception is that this
+
+[298] 00:12:25.600 --> 00:12:30.800  (duration: 5.200s)
+means active inference systems are
+
+[299] 00:12:27.519 --> 00:12:32.639  (duration: 5.120s)
+automatically transparent and safe.
+
+[300] 00:12:30.799 --> 00:12:35.199  (duration: 4.400s)
+Not automatically.
+
+[301] 00:12:32.639 --> 00:12:38.240  (duration: 5.601s)
+You can still build a bad model or
+
+[302] 00:12:35.200 --> 00:12:41.040  (duration: 5.840s)
+encode harmful preferences or deploy an
+
+[303] 00:12:38.240 --> 00:12:43.039  (duration: 4.800s)
+agent in the wrong context.
+
+[304] 00:12:41.039 --> 00:12:45.679  (duration: 4.640s)
+But the structure makes auditing more
+
+[305] 00:12:43.039 --> 00:12:48.719  (duration: 5.680s)
+plausible. If the systems preferences
+
+[306] 00:12:45.679 --> 00:12:51.039  (duration: 5.360s)
+are explicit, like avoid collisions,
+
+[307] 00:12:48.720 --> 00:12:53.839  (duration: 5.119s)
+stay within legal speed, minimize
+
+[308] 00:12:51.039 --> 00:12:56.319  (duration: 5.280s)
+discomfort, you can inspect and debate
+
+[309] 00:12:53.839 --> 00:12:58.803  (duration: 4.964s)
+them. If the systems beliefs are
+
+[310] 00:12:56.320 --> 00:13:00.560  (duration: 4.240s)
+explicit, you can test them.
+
+[311] 00:12:58.802 --> 00:13:02.720  (duration: 3.917s)
+[clears throat] If it's uncertain, it
+
+[312] 00:13:00.559 --> 00:13:04.958  (duration: 4.399s)
+can admit it and ask for help rather
+
+[313] 00:13:02.720 --> 00:13:07.040  (duration: 4.320s)
+than bluffing.
+
+[314] 00:13:04.958 --> 00:13:10.000  (duration: 5.041s)
+So, how does this relate to modern AI
+
+[315] 00:13:07.039 --> 00:13:13.120  (duration: 6.080s)
+models like large language models?
+
+[316] 00:13:10.000 --> 00:13:16.320  (duration: 6.320s)
+LLMs are astonishing at capturing broad
+
+[317] 00:13:13.120 --> 00:13:19.839  (duration: 6.719s)
+patterns of human text and can act like
+
+[318] 00:13:16.320 --> 00:13:21.760  (duration: 5.440s)
+compressed libraries of world knowledge,
+
+[319] 00:13:19.839 --> 00:13:24.800  (duration: 4.961s)
+but by themselves, they don't have
+
+[320] 00:13:21.759 --> 00:13:27.439  (duration: 5.680s)
+robust agency. They don't choose what
+
+[321] 00:13:24.799 --> 00:13:29.359  (duration: 4.560s)
+data to collect next in the real world,
+
+[322] 00:13:27.440 --> 00:13:32.399  (duration: 4.959s)
+and they don't naturally maintain a
+
+[323] 00:13:29.360 --> 00:13:35.839  (duration: 6.479s)
+persistent testable internal world model
+
+[324] 00:13:32.399 --> 00:13:37.200  (duration: 4.801s)
+grounded in sensors and consequences.
+
+[325] 00:13:35.839 --> 00:13:40.000  (duration: 4.161s)
+They can predict the next word
+
+[326] 00:13:37.200 --> 00:13:41.680  (duration: 4.480s)
+brilliantly while still failing at what
+
+[327] 00:13:40.000 --> 00:13:44.480  (duration: 4.480s)
+experiment should I run to find out if
+
+[328] 00:13:41.679 --> 00:13:47.120  (duration: 5.440s)
+my hypothesis is wrong.
+
+[329] 00:13:44.480 --> 00:13:50.240  (duration: 5.760s)
+One promising vision is a hybrid use of
+
+[330] 00:13:47.120 --> 00:13:52.560  (duration: 5.440s)
+language models and active inference. In
+
+[331] 00:13:50.240 --> 00:13:55.200  (duration: 4.960s)
+this case, we use large language models
+
+[332] 00:13:52.559 --> 00:13:57.359  (duration: 4.800s)
+as rich representations, ways of
+
+[333] 00:13:55.200 --> 00:14:00.560  (duration: 5.360s)
+proposing hypotheses, summarizing
+
+[334] 00:13:57.360 --> 00:14:02.800  (duration: 5.440s)
+context, and generating candidate plans
+
+[335] 00:14:00.559 --> 00:14:04.559  (duration: 4.000s)
+while using active inference as the
+
+[336] 00:14:02.799 --> 00:14:06.958  (duration: 4.159s)
+decision and learning spine that
+
+[337] 00:14:04.559 --> 00:14:08.559  (duration: 4.000s)
+evaluates actions by expected free
+
+[338] 00:14:06.958 --> 00:14:11.039  (duration: 4.081s)
+energy.
+
+[339] 00:14:08.559 --> 00:14:13.439  (duration: 4.880s)
+In that setup, the LLM becomes less like
+
+[340] 00:14:11.039 --> 00:14:15.838  (duration: 4.799s)
+an oracle and more like an imagination
+
+[341] 00:14:13.440 --> 00:14:18.959  (duration: 5.519s)
+engine inside an agent that must remain
+
+[342] 00:14:15.839 --> 00:14:21.199  (duration: 5.360s)
+tethered to reality through feedback.
+
+[343] 00:14:18.958 --> 00:14:24.799  (duration: 5.841s)
+The agent would not only talk, it would
+
+[344] 00:14:21.198 --> 00:14:27.599  (duration: 6.401s)
+also measure, act, update, and keep
+
+[345] 00:14:24.799 --> 00:14:30.000  (duration: 5.200s)
+track of uncertainty over time. A kind
+
+[346] 00:14:27.600 --> 00:14:32.639  (duration: 5.039s)
+of continuously updating scientific
+
+[347] 00:14:30.000 --> 00:14:34.159  (duration: 4.160s)
+memory. This matters for more than
+
+[348] 00:14:32.639 --> 00:14:36.159  (duration: 3.521s)
+robots.
+
+[349] 00:14:34.159 --> 00:14:39.919  (duration: 5.760s)
+Consider complex systems like power
+
+[350] 00:14:36.159 --> 00:14:42.159  (duration: 6.000s)
+grids, supply chains, hospitals, or
+
+[351] 00:14:39.919 --> 00:14:44.719  (duration: 4.800s)
+communication networks.
+
+[352] 00:14:42.159 --> 00:14:47.278  (duration: 5.119s)
+These systems are partly observable,
+
+[353] 00:14:44.720 --> 00:14:48.879  (duration: 4.160s)
+always changing, and full of delayed
+
+[354] 00:14:47.278 --> 00:14:50.799  (duration: 3.521s)
+effects.
+
+[355] 00:14:48.879 --> 00:14:53.360  (duration: 4.480s)
+Traditional AI often learns from
+
+[356] 00:14:50.799 --> 00:14:56.399  (duration: 5.599s)
+historical logs and then struggles when
+
+[357] 00:14:53.360 --> 00:14:58.560  (duration: 5.200s)
+the world shifts. An active inference
+
+[358] 00:14:56.399 --> 00:15:01.440  (duration: 5.041s)
+approach treats the system like a living
+
+[359] 00:14:58.559 --> 00:15:05.119  (duration: 6.560s)
+process. It maintains a model of hidden
+
+[360] 00:15:01.440 --> 00:15:07.680  (duration: 6.240s)
+causes, demand, failures, congestion,
+
+[361] 00:15:05.120 --> 00:15:10.480  (duration: 5.360s)
+chooses interventions, rerouting, load
+
+[362] 00:15:07.679 --> 00:15:13.278  (duration: 5.599s)
+balancing, and actively seeks data to
+
+[363] 00:15:10.480 --> 00:15:16.079  (duration: 5.599s)
+reduce uncertainty, probing sensors,
+
+[364] 00:15:13.278 --> 00:15:17.439  (duration: 4.161s)
+running diagnostic tests. It's the
+
+[365] 00:15:16.078 --> 00:15:19.679  (duration: 3.601s)
+difference between reading a weather
+
+[366] 00:15:17.440 --> 00:15:22.000  (duration: 4.560s)
+report and running a weather station
+
+[367] 00:15:19.679 --> 00:15:24.159  (duration: 4.480s)
+that learns how your local microclimate
+
+[368] 00:15:22.000 --> 00:15:27.278  (duration: 5.279s)
+behaves.
+
+[369] 00:15:24.159 --> 00:15:30.078  (duration: 5.919s)
+Stepping back, the physics angle is not
+
+[370] 00:15:27.278 --> 00:15:32.480  (duration: 5.201s)
+that active inference magically imports
+
+[371] 00:15:30.078 --> 00:15:34.159  (duration: 4.081s)
+equations from Newton or Einstein into
+
+[372] 00:15:32.480 --> 00:15:36.639  (duration: 4.159s)
+AI.
+
+[373] 00:15:34.159 --> 00:15:38.159  (duration: 4.000s)
+The deeper point is philosophical and
+
+[374] 00:15:36.639 --> 00:15:40.560  (duration: 3.921s)
+practical.
+
+[375] 00:15:38.159 --> 00:15:43.039  (duration: 4.880s)
+Physics succeeds by building models that
+
+[376] 00:15:40.559 --> 00:15:45.919  (duration: 5.360s)
+are constrained, testable, and
+
+[377] 00:15:43.039 --> 00:15:49.599  (duration: 6.560s)
+efficient. It respects conservation
+
+[378] 00:15:45.919 --> 00:15:52.479  (duration: 6.560s)
+laws, symmetries, and stable structure.
+
+[379] 00:15:49.600 --> 00:15:54.639  (duration: 5.039s)
+Active inference tries to bring that
+
+[380] 00:15:52.480 --> 00:15:56.240  (duration: 3.760s)
+first principles discipline into
+
+[381] 00:15:54.639 --> 00:15:58.639  (duration: 4.000s)
+intelligence.
+
+[382] 00:15:56.240 --> 00:16:01.440  (duration: 5.200s)
+Instead of training ever larger pattern
+
+[383] 00:15:58.639 --> 00:16:03.600  (duration: 4.961s)
+matchers and hoping they generalize, it
+
+[384] 00:16:01.440 --> 00:16:05.920  (duration: 4.480s)
+builds agents that must continually
+
+[385] 00:16:03.600 --> 00:16:08.879  (duration: 5.280s)
+justify their beliefs against incoming
+
+[386] 00:16:05.919 --> 00:16:10.799  (duration: 4.880s)
+evidence and must choose actions that
+
+[387] 00:16:08.879 --> 00:16:12.879  (duration: 4.000s)
+balance goals with information
+
+[388] 00:16:10.799 --> 00:16:15.919  (duration: 5.120s)
+gathering.
+
+[389] 00:16:12.879 --> 00:16:19.198  (duration: 6.319s)
+If you want one final mental image,
+
+[390] 00:16:15.919 --> 00:16:21.039  (duration: 5.120s)
+picture a thermostat, a mouse, and a
+
+[391] 00:16:19.198 --> 00:16:23.198  (duration: 4.000s)
+scientist.
+
+[392] 00:16:21.039 --> 00:16:26.719  (duration: 5.680s)
+A thermostat keeps temperature near a
+
+[393] 00:16:23.198 --> 00:16:28.958  (duration: 5.760s)
+set point. Simple feedback control.
+
+[394] 00:16:26.720 --> 00:16:31.600  (duration: 4.880s)
+A mouse not only keeps itself within
+
+[395] 00:16:28.958 --> 00:16:34.319  (duration: 5.361s)
+safe conditions, it explores to find
+
+[396] 00:16:31.600 --> 00:16:37.680  (duration: 6.080s)
+food, learns the layout, and avoids
+
+[397] 00:16:34.320 --> 00:16:40.160  (duration: 5.840s)
+traps. Adaptive control.
+
+[398] 00:16:37.679 --> 00:16:41.919  (duration: 4.240s)
+A scientist does all that while also
+
+[399] 00:16:40.159 --> 00:16:45.120  (duration: 4.960s)
+designing experiments to reduce
+
+[400] 00:16:41.919 --> 00:16:47.120  (duration: 5.200s)
+uncertainty and improve theories.
+
+[401] 00:16:45.120 --> 00:16:49.360  (duration: 4.240s)
+Active inference is an attempt to write
+
+[402] 00:16:47.120 --> 00:16:51.839  (duration: 4.719s)
+down a single principle that can scale
+
+[403] 00:16:49.360 --> 00:16:54.399  (duration: 5.039s)
+from thermostat-like regulation to
+
+[404] 00:16:51.839 --> 00:16:57.040  (duration: 5.201s)
+scientistlike discovery.
+
+[405] 00:16:54.399 --> 00:17:00.320  (duration: 5.921s)
+Keep your internal model and your lived
+
+[406] 00:16:57.039 --> 00:17:04.078  (duration: 7.039s)
+experience in tight, efficient agreement
+
+[407] 00:17:00.320 --> 00:17:06.160  (duration: 5.840s)
+by continuously minimizing free energy.
+
+[408] 00:17:04.078 --> 00:17:09.678  (duration: 5.600s)
+the mismatch between what you expected
+
+[409] 00:17:06.160 --> 00:17:13.199  (duration: 7.039s)
+and what you sensed, plus the cost of
+
+[410] 00:17:09.679 --> 00:17:16.400  (duration: 6.721s)
+making your model too complicated.
+
+[411] 00:17:13.199 --> 00:17:18.640  (duration: 5.441s)
+The satisfying takeaway is this. Active
+
+[412] 00:17:16.400 --> 00:17:22.079  (duration: 5.679s)
+inference reframes intelligence as
+
+[413] 00:17:18.640 --> 00:17:24.480  (duration: 5.840s)
+something closer to self-evidencing,
+
+[414] 00:17:22.078 --> 00:17:26.720  (duration: 4.641s)
+a system continually acting to gather
+
+[415] 00:17:24.480 --> 00:17:28.798  (duration: 4.319s)
+the kinds of experiences that confirm
+
+[416] 00:17:26.720 --> 00:17:31.839  (duration: 5.120s)
+and refine its understanding of the
+
+[417] 00:17:28.798 --> 00:17:34.960  (duration: 6.161s)
+world while avoiding states that would
+
+[418] 00:17:31.839 --> 00:17:37.439  (duration: 5.600s)
+overwhelm it with unpredictability.
+
+[419] 00:17:34.960 --> 00:17:40.798  (duration: 5.839s)
+And physics enters not as decoration but
+
+[420] 00:17:37.440 --> 00:17:44.320  (duration: 6.880s)
+as a guide. build agents that respect
+
+[421] 00:17:40.798 --> 00:17:47.918  (duration: 7.120s)
+deep regularities, conserve resources,
+
+[422] 00:17:44.319 --> 00:17:49.918  (duration: 5.599s)
+and learn by staying coupled to reality.
+
+[423] 00:17:47.919 --> 00:17:52.559  (duration: 4.640s)
+If that vision holds up in engineering
+
+[424] 00:17:49.919 --> 00:17:55.200  (duration: 5.281s)
+practice, it could point toward AI that
+
+[425] 00:17:52.558 --> 00:17:58.558  (duration: 6.000s)
+is not only more capable, but also more
+
+[426] 00:17:55.200 --> 00:18:01.120  (duration: 5.920s)
+efficient, more interpretable, and
+
+[427] 00:17:58.558 --> 00:18:03.359  (duration: 4.801s)
+crucially better at knowing what it
+
+[428] 00:18:01.119 --> 00:18:06.079  (duration: 4.960s)
+doesn't know.
+
+[429] 00:18:03.359 --> 00:18:09.599  (duration: 6.240s)
+I hope you enjoyed this video. Until the
+
+[430] 00:18:06.079 --> 00:18:11.759  (duration: 5.680s)
+next one, take care of yourself.
+
+[431] 00:18:09.599 --> 00:18:13.119  (duration: 3.520s)
+By the way, if you've got a quantitative
+
+[432] 00:18:11.759 --> 00:18:15.759  (duration: 4.000s)
+background in physics, [music]
+
+[433] 00:18:13.119 --> 00:18:17.359  (duration: 4.240s)
+engineering, math, or a related field,
+
+[434] 00:18:15.759 --> 00:18:18.960  (duration: 3.200s)
+and you're thinking about breaking into
+
+[435] 00:18:17.359 --> 00:18:22.319  (duration: 4.960s)
+data science, but don't know your next
+
+[436] 00:18:18.960 --> 00:18:24.400  (duration: 5.440s)
+move, this is for you. We built
+
+[437] 00:18:22.319 --> 00:18:26.480  (duration: 4.160s)
+CompuFlare Boot Camp specifically to
+
+[438] 00:18:24.400 --> 00:18:29.120  (duration: 4.720s)
+help you turn your technical foundation
+
+[439] 00:18:26.480 --> 00:18:31.360  (duration: 4.880s)
+into a job ready data career. [music]
+
+[440] 00:18:29.119 --> 00:18:33.599  (duration: 4.480s)
+Inside the program, you get a weekly
+
+[441] 00:18:31.359 --> 00:18:35.359  (duration: 4.000s)
+personalized action plan. So you're not
+
+[442] 00:18:33.599 --> 00:18:37.279  (duration: 3.680s)
+just following random tutorials, [music]
+
+[443] 00:18:35.359 --> 00:18:40.079  (duration: 4.720s)
+you're building portfolio projects
+
+[444] 00:18:37.279 --> 00:18:41.279  (duration: 4.000s)
+tailored to you. You'll also get access
+
+[445] 00:18:40.079 --> 00:18:43.519  (duration: 3.440s)
+to my Ingram, [music]
+
+[446] 00:18:41.279 --> 00:18:45.918  (duration: 4.639s)
+our active recall and spaced repetition
+
+[447] 00:18:43.519 --> 00:18:47.359  (duration: 3.840s)
+system, so you actually retain machine
+
+[448] 00:18:45.919 --> 00:18:49.759  (duration: 3.841s)
+learning concepts instead of [music]
+
+[449] 00:18:47.359 --> 00:18:52.798  (duration: 5.439s)
+forgetting them a week later. On top of
+
+[450] 00:18:49.759 --> 00:18:54.720  (duration: 4.960s)
+that, you'll work through 27 in to
+
+[451] 00:18:52.798 --> 00:18:57.200  (duration: 4.401s)
+projects [music] across elementary,
+
+[452] 00:18:54.720 --> 00:18:58.960  (duration: 4.240s)
+intermediate, and advanced levels, so
+
+[453] 00:18:57.200 --> 00:19:01.919  (duration: 4.719s)
+you graduate with real [music]
+
+[454] 00:18:58.960 --> 00:19:04.720  (duration: 5.760s)
+practical experience. And we don't stop
+
+[455] 00:19:01.919 --> 00:19:06.480  (duration: 4.561s)
+there. We review your GitHub and resume
+
+[456] 00:19:04.720 --> 00:19:09.279  (duration: 4.560s)
+weekly [music] and provide clear
+
+[457] 00:19:06.480 --> 00:19:11.200  (duration: 4.720s)
+recommendations to help you get hired.
+
+[458] 00:19:09.279 --> 00:19:13.440  (duration: 4.160s)
+If you're serious about landing a data
+
+[459] 00:19:11.200 --> 00:19:15.679  (duration: 4.479s)
+role, [music] join CompuFlare Boot Camp
+
+[460] 00:19:13.440 --> 00:19:17.759  (duration: 4.320s)
+and build a portfolio that actually
+
+[461] 00:19:15.679 --> 00:19:21.640  (duration: 5.961s)
+stands out. [music] Apply through the
+
+[462] 00:19:17.759 --> 00:19:21.640  (duration: 3.880s)
+link in the description below.
+
+================================================================================
+End of transcript - Saved by YTTA (YouTube Transcript API)
+================================================================================
